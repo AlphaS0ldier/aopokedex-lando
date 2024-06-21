@@ -1,0 +1,125 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Aopokedex Plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-21 22:57+0000\n"
+"PO-Revision-Date: 2024-05-21 22:58+0000\n"
+"Last-Translator: \n"
+"Language-Team: Spanish (Spain)\n"
+"Language: es_ES\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.7; wp-6.5.3\n"
+"X-Domain: aopokedex"
+
+#: aopokedex-plugin.php:55 includes/aopokedex-activator.php:44
+msgid "Add New"
+msgstr ""
+
+#: aopokedex-plugin.php:56 includes/aopokedex-activator.php:45
+msgid "Add New Pokemon"
+msgstr ""
+
+#: aopokedex-plugin.php:96
+msgid "Add New Regional Pokedex"
+msgstr ""
+
+#: aopokedex-plugin.php:92
+msgid "All Regional Pokedexs"
+msgstr ""
+
+#. Name of the plugin
+msgid "Aopokedex Plugin"
+msgstr ""
+
+#: aopokedex-plugin.php:101
+msgid "Choose from most used Regional Pokedexs"
+msgstr ""
+
+#: includes/aopokedex-activator.php:46
+msgid "Edit Pokemon"
+msgstr ""
+
+#: aopokedex-plugin.php:93
+msgid "Edit Regional Pokedex"
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://www.vps-fcc51471.vps.ovh.net/aopokedex"
+msgstr ""
+
+#. Author of the plugin
+msgid "m1chaelD"
+msgstr ""
+
+#: includes/aopokedex-activator.php:47
+msgid "New Pokemon"
+msgstr ""
+
+#: aopokedex-plugin.php:97
+msgid "New Regional Pokedex Name"
+msgstr ""
+
+#: aopokedex-plugin.php:102
+msgid "No Regional Pokedexs found"
+msgstr ""
+
+#. Description of the plugin
+msgid "Plugin para la página Aopokedex"
+msgstr ""
+
+#: aopokedex-plugin.php:53 includes/aopokedex-activator.php:42
+msgid "Pokemon"
+msgstr ""
+
+#: aopokedex-plugin.php:54 includes/aopokedex-activator.php:43
+msgid "pokemon"
+msgstr ""
+
+#: aopokedex-plugin.php:133 includes/aopokedex-activator.php:31
+msgid "Pokemon Data"
+msgstr ""
+
+#: aopokedex-plugin.php:115 aopokedex-plugin.php:134
+msgid "Pokemon Type"
+msgstr ""
+
+#: aopokedex-plugin.php:116
+msgid "pokemon_type"
+msgstr ""
+
+#: aopokedex-plugin.php:99
+msgid "Popular Regional Pokedexs"
+msgstr ""
+
+#: aopokedex-plugin.php:90 aopokedex-plugin.php:91
+msgid "Regional Pokedex"
+msgstr ""
+
+#: aopokedex-plugin.php:58 includes/aopokedex-activator.php:49
+msgid "Search Pokemon"
+msgstr ""
+
+#: aopokedex-plugin.php:98
+msgid "Search Regional Pokedexs"
+msgstr ""
+
+#: aopokedex-plugin.php:100
+msgid "Separate Regional Pokedexs with comma"
+msgstr ""
+
+#: aopokedex-plugin.php:95
+msgid "Update Regional Pokedex"
+msgstr ""
+
+#: aopokedex-plugin.php:57 includes/aopokedex-activator.php:48
+msgid "View Pokemon"
+msgstr ""
+
+#: aopokedex-plugin.php:94
+msgid "View Regional Pokedex"
+msgstr ""

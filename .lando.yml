@@ -1,0 +1,9 @@
+name: aopokedex-wp
+recipe: wordpress
+config:
+  webroot: .
+services:
+  pma:
+    type: phpmyadmin
+    hosts:
+      - database

@@ -1,0 +1,64 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: calcular-evs.php\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-22 16:46+0000\n"
+"PO-Revision-Date: 2024-05-22 17:08+0000\n"
+"Last-Translator: \n"
+"Language-Team: Spanish (Spain)\n"
+"Language: es_ES\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.7; wp-6.5.3\n"
+"X-Domain: calcular-evs"
+
+#: calcular-evs.php:51
+msgid "Attacking Pokémon"
+msgstr "Pokémon Atacante"
+
+#. Name of the plugin
+msgid "calcular-evs.php"
+msgstr ""
+
+#: calcular-evs.php:101 calcular-evs.php:107
+msgid "Calculate"
+msgstr "Calcular"
+
+#: calcular-evs.php:26
+msgid "Calculate Again"
+msgstr "Calcular de Nuevo"
+
+#: calcular-evs.php:35
+msgid ""
+"Every Pokémon can have a total of 510 EVs and every stat can have up to 252 "
+"EVs"
+msgstr ""
+"Cada Pokémon puede tener un total de 510 EVs y cada estadística puede tener "
+"hasta 252 EVs"
+
+#: calcular-evs.php:115
+msgid "EVs exceded max value by"
+msgstr "EVs ha superado el valor máximo por "
+
+#: calcular-evs.php:94
+msgid "LEVEL"
+msgstr "NIVEL"
+
+#: calcular-evs.php:53 calcular-evs.php:113
+msgid "Select a Pokémon"
+msgstr "Selecciona un Pokémon"
+
+#: calcular-evs.php:20
+msgid "STATS CALCULATED FROM LEVEL"
+msgstr "ESTADÍSTICAS CALCULADAS DESDE NIVEL"
+
+#: calcular-evs.php:96
+msgid "Value between 1 to 100"
+msgstr "Valor entre 1 a 100"
+
+#: calcular-evs.php:88
+msgid "Value between 1 to 252"
+msgstr "Valor entre 1 a 252"

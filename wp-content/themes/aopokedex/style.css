@@ -1,0 +1,1116 @@
+/*
+Theme Name:   Aopokedex
+Theme URI:    https://www.aopokedex.site
+Description:  Theme for Aopokedex
+Author:       m1chaelD
+Author URI:   https://www.aopokedex.site
+Template:     hello-elementor
+Version:      1.0.0
+Text Domain:  aopokedex
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+/*
+--e-global-color-primary: #BCD8E4;
+  --e-global-color-secondary: #6086B7;
+  --e-global-color-text: #101F36;
+  --e-global-color-accent: #F7F8FA;
+*/
+
+
+/********************************************************************/
+/*Estilos Generales*/
+/********************************************************************/
+
+.contenedor>* {
+    margin: 10px 0;
+}
+
+.contenedor * {
+    color: #101F36;
+}
+
+.contenedor-datos {
+    background-color: #BCD8E4 !important;
+    border: solid 3px #6086B7 !important;
+    border-radius: 10px !important;
+}
+
+
+
+.contenedor-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-select select {
+    margin: 0 20px;
+}
+
+.select-estilo {
+    background-color: #BCD8E4;
+    border: 7px solid #6086B7;
+    border-bottom-width: 15px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(96, 134, 183);
+    border-bottom: 0;
+    border-radius: 7px 7px 0 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.select-estilo:focus {
+    border-color: #6086B7;
+}
+
+
+
+.fuente-header {
+    font-family: "Tourney", sans-serif;
+    text-align: center;
+}
+
+.fuente-texto {
+    font-family: "Imprima", sans-serif !important;
+}
+
+.fuente-tamano-header {
+    font-size: 2.8rem;
+}
+
+
+.fuente-header-dos-tamano {
+    font-size: 1.8rem;
+}
+
+
+.contenedor-noticia h2,
+.fuente-header-tres-tamano {
+    font-size: 1.4rem;
+}
+
+.fuente-tamano-texto,
+.contenedor-noticia p,
+.contenedor-noticia a {
+    font-size: 1rem !important;
+}
+
+
+
+
+.estilo-tabla {
+    border-spacing: 0 15px;
+}
+
+.estilo-tabla-separar {
+    border-collapse: separate;
+}
+
+.estilo-tabla * {
+    border: 0 !important;
+}
+
+.estilo-tabla tr {
+    background-color: #BCD8E4;
+}
+
+.estilo-tabla td,
+.estilo-tabla th {
+    vertical-align: middle !important;
+    text-align: center;
+    padding: 5px;
+}
+
+.tabla-imagen-pokemon {
+    width: auto;
+    max-height: 20vw;
+}
+
+.tabla-imagen-tipo {
+    width: auto;
+    max-height: 10vw;
+}
+
+.estilo-boton {
+    background-color: #BCD8E4 !important;
+    border: solid 3px #6086B7 !important;
+    border-radius: 10px !important;
+    padding: 10px !important;
+    text-align: center !important;
+    width: fit-content !important;
+    margin: 0 auto !important;
+    cursor: pointer !important;
+    color: #101F36 !important;
+    height: auto !important;
+}
+
+.estilo-boton:hover {
+    background-color: #101F36 !important;
+    color: #F7F8FA !important;
+    border-color: #BCD8E4 !important;
+}
+
+.estilo-boton:focus {
+    background-color: #6086B7 !important;
+}
+
+.select-estilo-pokedex,
+.select-estilo-calculador-evs {
+    width: 58%;
+    margin-bottom: 100px;
+}
+
+.calculador-evs-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calculador-evs-inputs>div {
+    margin: 5px;
+    width: 85%;
+}
+
+.estilo-pokemon-imagen {
+    width: auto;
+    max-height: 35vw;
+}
+
+.elementor-widget-container p a {
+    color: #101F36;
+}
+
+.elementor-widget-container p a:hover {
+    color: #F7F8FA;
+    background-color: #101F36;
+    padding: 5px;
+}
+
+/* LOADING */
+
+#loading {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #101f367d;
+    z-index: 10;
+}
+
+#loading #resultado_calculo_contenedor {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (width >=767px) {
+
+    .contenedor>* {
+        margin: 20px 0;
+    }
+
+    .contenedor-datos {
+        border: solid 5px #6086B7 !important;
+    }
+
+    .fuente-tamano-header {
+        font-size: 3.6em;
+    }
+
+
+    .fuente-header-dos-tamano {
+        font-size: 2.6rem;
+    }
+
+
+    .contenedor-noticia h2,
+    .fuente-header-tres-tamano {
+        font-size: 1.8rem;
+    }
+
+    .fuente-tamano-texto,
+    .contenedor-noticia p,
+    .contenedor-noticia a {
+        font-size: 1.6rem !important;
+    }
+
+    .estilo-tabla {
+        border-spacing: 0 35px;
+    }
+
+    .estilo-tabla td,
+    .estilo-tabla th {
+        padding: 10px;
+    }
+
+    .tabla-imagen-pokemon {
+        max-height: 15vw;
+    }
+
+    .tabla-imagen-tipo {
+        max-height: 7vw;
+    }
+
+
+
+    .select-estilo {
+        border: 10px solid #6086B7;
+        border-radius: 10px 10px 0 0;
+        border-bottom: 0;
+    }
+
+    .select-estilo-pokedex,
+    .select-estilo-calculador-evs {
+        width: 40%;
+        margin-bottom: 200px;
+    }
+
+
+    .estilo-boton {
+        border: solid 5px #6086B7 !important;
+    }
+
+    .calculador-evs-inputs>div {
+        margin: 20px;
+    }
+
+
+
+    .estilo-pokemon-imagen {
+        max-height: 30vw;
+    }
+
+
+
+}
+
+@media (width >=1024px) {
+
+    .contenedor>* {
+        margin: 50px 0;
+    }
+
+    .contenedor-datos {
+        border: solid 8px #6086B7 !important;
+    }
+
+    .fuente-tamano-header {
+        font-size: 4.5rem;
+    }
+
+    .fuente-header-dos-tamano {
+        font-size: 3.5rem;
+    }
+
+    .contenedor-noticia h2,
+    .fuente-header-tres-tamano {
+        font-size: 2.5rem;
+    }
+
+    .fuente-tamano-texto,
+    .contenedor-noticia p,
+    .contenedor-noticia a {
+        font-size: 2.1rem !important;
+    }
+
+
+    .estilo-tabla {
+        border-spacing: 0 55px;
+    }
+
+    .estilo-tabla td,
+    .estilo-tabla th {
+        padding: 20px;
+    }
+
+    .tabla-imagen-pokemon {
+        max-height: 12vw;
+    }
+
+    .tabla-imagen-tipo {
+        max-height: 5vw;
+    }
+
+
+
+    .select-estilo {
+        border: 15px solid #6086B7;
+        border-bottom: 0;
+    }
+
+
+    .estilo-boton {
+        border: solid 8px #6086B7 !important;
+    }
+
+    .calculador-evs-inputs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        align-items: center;
+    }
+
+    .calculador-evs-inputs>div {
+        margin: 30px;
+        width: 95%;
+    }
+
+
+
+    .estilo-pokemon-imagen {
+        max-height: 20vw;
+    }
+
+}
+
+
+/********************************************************************/
+/* Página Inicio*/
+/********************************************************************/
+
+/*Tablón de noticias*/
+
+.contenedor-noticia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor-noticia img {
+    max-width: 135px;
+    height: auto;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.contenedor-noticia div:has(img) {
+    text-align: center;
+}
+
+.contenedor-noticia-datos {
+    padding: 20px;
+    width: 90%;
+}
+
+.contenedor-noticia-datos p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.contenedor-noticia-datos h2 {
+    font-weight: bold;
+}
+
+@media (width >=767px) {
+
+    .contenedor-noticia {
+        flex-direction: row;
+        margin: 30px 0;
+    }
+
+    .contenedor-noticia img {
+        margin-bottom: 0px;
+        margin-right: 20px;
+        display: block;
+    }
+
+    .contenedor-noticia-datos {
+        width: 50%;
+    }
+}
+
+@media (width >=1024px) {
+
+    .contenedor-noticia {
+        margin: 50px 0;
+    }
+
+    .contenedor-noticia img {
+        max-width: 250px;
+    }
+
+    .contenedor-noticia-datos {
+        width: 80%;
+    }
+}
+
+/* Formulario */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario * {
+    font-size: inherit !important;
+    font-family: inherit !important;
+}
+
+.formulario>div {
+    width: 100%;
+    margin: 10px auto;
+}
+
+.wpforms-form .wpforms-field-large.wpforms-field-required {
+    background-color: #BCD8E4 !important;
+    border: solid 5px #6086B7 !important;
+    border-radius: 10px !important;
+    padding: 10px;
+}
+
+/********************************************************************/
+/* Página Pokédex */
+/********************************************************************/
+
+#pokedex-titulo-generacion {
+    width: 60%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#tabla-pokedex tr {
+    cursor: pointer;
+}
+
+.select-estilo-pokedex select {
+    margin: 0;
+}
+
+
+
+@media (width >=767px) {
+    #pokedex-titulo-generacion {
+        width: 40%;
+    }
+}
+
+@media (width >=1024px) {}
+
+
+/********************************************************************/
+/* Calculador EVs */
+/********************************************************************/
+
+#calculador-evs-instrucciones {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+#calculador-evs-nivel,
+#calculador-evs-boton-contenedor {
+    grid-column: 2/3;
+}
+
+
+#calculador-evs-imagen-contenedor {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#calculador-evs-pokemon-imagen,
+#pokemon_defensor_datos {
+    display: none;
+    padding: 5px;
+}
+
+#calculador-evs-imagen-contenedor {
+    margin-top: 30px;
+}
+
+#resultado_calculo_contenedor h1 {
+    padding: 10px;
+    width: 80%;
+}
+
+#resultado_calculo_boton {
+    margin: 20px 0 !important;
+    padding: 10px !important;
+    cursor: pointer;
+}
+
+#resultado_calculo_datos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 10px;
+}
+
+#resultado_calculo_datos div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+
+@media (width >=767px) {
+
+    #calculador-evs-instrucciones {
+        width: 70%;
+        margin-bottom: 70px;
+        padding: 14px;
+    }
+
+
+    #calculador-evs-pokemon-imagen,
+    #pokemon_defensor_datos {
+        padding: 10px;
+    }
+
+    #calculador-evs-imagen-contenedor {
+        margin-top: 50px;
+    }
+
+}
+
+@media (width >=1024px) {
+
+    #calculador-evs-instrucciones {
+        width: 50%;
+        margin-bottom: 120px;
+        padding: 20px;
+    }
+
+
+    #calculador-evs-pokemon-imagen,
+    #pokemon_defensor_datos {
+        padding: 15px;
+    }
+
+    #calculador-evs-imagen-contenedor {
+        margin-top: 80px;
+    }
+
+}
+
+/********************************************************************/
+/* Calculador Daños */
+/********************************************************************/
+
+#pagina_danos #resultado_calculo_contenedor h1,
+#pokemon_dano_batalla,
+#pokemon_defensor_datos_contenedor,
+#movimiento_datos,
+#pagina_danos #resultado_calculo_datos {
+    display: none;
+}
+
+#pagina_danos .contenedor-select {
+    flex-direction: column;
+}
+
+#pagina_danos .contenedor-select select {
+    margin: 20px 0;
+    width: 80%;
+}
+
+#pagina_danos #calculador-evs-imagen-contenedor {
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+#pokemon_dano_batalla img {
+    height: auto;
+    max-width: 25vw;
+}
+
+#calcular_dano_input_boost {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+}
+
+#calcular_dano_input_boost>div {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(7, 1fr);
+    justify-items: center;
+}
+
+#calcular_dano_input_boost>div h3 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Estilo Checkbox de los Boosts para Calculador Daños */
+
+#calcular_dano_input_boost>div>label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+#calcular_dano_input_boost>div>label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+#calcular_dano_input_boost>div>label .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #bcd8e4;
+    border: 2px solid #6086b7;
+    border-radius: 5px;
+}
+
+#calcular_dano_input_boost>div>label:hover input~.checkmark {
+    background-color: #98c3d5;
+}
+
+#calcular_dano_input_boost>div>label input:checked~.checkmark {
+    background-color: #4f99b8;
+}
+
+#calcular_dano_input_boost>div>label .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+#calcular_dano_input_boost>div>label input:checked~.checkmark:after {
+    display: block;
+}
+
+#calcular_dano_input_boost>div>label .checkmark:after {
+    left: 8px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+#calculador-danos-boton-contenedor {
+    grid-column: 2/3;
+}
+
+
+#calculador-evs-imagen-contenedor>div:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#movimiento_datos {
+    margin: 20px auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    padding: 20px;
+}
+
+#movimiento_datos>p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 5px 0;
+}
+
+#movimiento_datos img {
+    width: 7vw;
+    height: auto;
+}
+
+
+#resultado_dano {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#resultado_dano p {
+    padding: 20px;
+}
+
+
+@media (width >=767px) {
+
+    #pagina_danos .contenedor-select {
+        flex-direction: column;
+    }
+
+    #pagina_danos .contenedor-select select {
+        margin: 30px 0;
+    }
+
+    #pagina_danos #calculador-evs-imagen-contenedor {
+        flex-direction: row;
+        margin: 50px 0;
+    }
+
+    #pagina_danos .estilo-pokemon-imagen {
+        height: auto;
+        max-width: 22vw;
+    }
+
+    #pokemon_dano_batalla img {
+        height: auto;
+        max-width: 22vw;
+    }
+
+    #movimiento_datos {
+        margin: 40px auto;
+        width: 50%;
+        padding: 15px;
+    }
+
+    #calcular_dano_input_boost {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+}
+
+@media (width >=1024px) {
+
+    #pagina_danos .contenedor-select {
+        flex-direction: row;
+    }
+
+    #pagina_danos .contenedor-select select {
+        margin: 0 20px;
+        font-size: 1.5rem !important;
+        width: 30%;
+    }
+
+
+    #pagina_danos .estilo-pokemon-imagen {
+        height: auto;
+        max-width: 18vw;
+    }
+
+    #pokemon_dano_batalla img {
+        height: auto;
+        max-width: 18vw;
+    }
+
+    #movimiento_datos {
+        margin: 40px auto;
+        width: 40%;
+        padding: 25px;
+    }
+
+    #movimiento_datos img {
+        width: 4vw;
+        height: auto;
+    }
+
+    #calcular_dano_input_boost {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+    }
+}
+
+/********************************************************************/
+/* Estilo de cada Página De Datos de pokémon */
+/********************************************************************/
+
+.fuente-header-pokemon{
+    font-size: 1.2rem;
+}
+
+.fuente-titulo-pokemon-datos{
+    font-size: 1.8rem;
+}
+
+.pokemon-pagina-botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.pokemon-pagina-botones a {
+    padding: 10px;
+    margin: 0 20px;
+}
+
+.pokemon-pagina-contenedor-datos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pokemon-pagina-contenedor-datos * {
+    margin: 10px 0;
+}
+
+.contenedor-pokemon-datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.anchura-header {
+    width: 70%;
+    padding: 5px;
+}
+
+.pokemon-header {
+    font-size: 2.2rem;
+}
+
+.pokemon-pagina-descripcion>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+}
+
+.pokemon-pagina-imagen {
+    width: 45vw;
+    height: auto;
+    padding: 10px;
+}
+
+#pokemon-pagina-descripcion-datos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#pokemon-texto-pokedex div {
+    width: 80%;
+    padding: 10px;
+}
+
+
+#pokemon-estadisticas>div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+}
+
+#pokemon-estadisticas .contenedor-datos .metro {
+    margin: 0;
+}
+
+#pokemon-estadisticas .contenedor-datos .metro>div {
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgb(170, 166, 166);
+}
+
+#pokemon-estadisticas .contenedor-datos .metro>div>div {
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#pokemon-estadisticas .contenedor-datos .pokemon-dividir-estadistica {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+#pokemon-estadisticas .contenedor-datos .pokemon-dividir-estadistica>div {
+    width: 80%;
+}
+
+#pokemon-estadisticas .contenedor-datos .metro .low {
+    background-color: red;
+}
+
+#pokemon-estadisticas .contenedor-datos .metro .low-medium {
+    background-color: yellow;
+}
+
+#pokemon-estadisticas .contenedor-datos .metro .medium {
+    background-color: yellowgreen;
+}
+
+#pokemon-estadisticas .contenedor-datos .metro .medium-high {
+    background-color: green;
+}
+
+#pokemon-estadisticas .contenedor-datos .metro .high {
+    background-color: #101F36;
+}
+
+.tabla-anchura {
+    width: 90%;
+}
+
+#pokemon-movimientos tbody tr:nth-child(odd) {
+    background-color: #F7F8FA;
+}
+
+#pokemon-ventajas table p {
+    background-color: #101F36;
+    color: #F7F8FA;
+    border-radius: 10px;
+}
+
+
+
+@media (width >=767px) {
+
+    .fuente-header-pokemon{
+        font-size: 1.4rem;
+    }
+
+    .fuente-titulo-pokemon-datos{
+        font-size: 2rem;
+    }
+
+    .pokemon-pagina-botones {
+        margin: 50px 0;
+    }
+
+    .anchura-header {
+        width: 60%;
+        padding: 5px;
+    }
+
+    .pokemon-header {
+        font-size: 3.2rem;
+    }
+
+    .pokemon-pagina-descripcion>div {
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80%;
+    }
+
+    .pokemon-pagina-imagen {
+        width: 33vw;
+        padding: 20px;
+    }
+
+    #pokemon-pagina-descripcion-datos {
+        width: 100%;
+    }
+
+    .contenedor-pokemon-datos {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #pokemon-texto-pokedex div {
+        width: 50%;
+        padding: 20px;
+    }
+
+    #pokemon-estadisticas>div {
+        width: 85%;
+    }
+
+    #pokemon-estadisticas .contenedor-datos .metro {
+        margin: 0 20px;
+    }
+
+    #pokemon-estadisticas .contenedor-datos .pokemon-dividir-estadistica {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    #pokemon-estadisticas .contenedor-datos .pokemon-dividir-estadistica>div {
+        width: 100%;
+    }
+
+
+    .tabla-anchura {
+        width: 90%;
+    }
+}
+
+@media (width >=1024px) {
+
+    .fuente-header-pokemon{
+        font-size: 1.8rem;
+    }
+
+    .fuente-titulo-pokemon-datos{
+        font-size: 2.4rem;
+    }
+
+    .anchura-header {
+        width: 50%;
+        padding: 5px;
+    }
+
+    .pokemon-header {
+        font-size: 4rem;
+    }
+
+    .pokemon-pagina-descripcion>div {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .pokemon-pagina-imagen {
+        width: 24vw;
+        padding: 5px;
+    }
+
+    #pokemon-pagina-descripcion-datos {
+        width: 40%;
+        margin:50px 0 0 30px;
+    }
+
+    #pokemon-estadisticas>div {
+        width: 60%;
+    }
+
+    #pokemon-estadisticas .contenedor-datos .metro {
+        margin: 20px;
+    }
+
+
+    .tabla-anchura {
+        width: 60%;
+    }
+
+    img.categoria-movimiento{
+        height: 5vw;
+        width: auto;
+    }
+}

@@ -1,0 +1,97 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Aopokedex\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-22 16:37+0000\n"
+"PO-Revision-Date: 2024-06-15 21:42+0000\n"
+"Last-Translator: \n"
+"Language-Team: Spanish (Spain)\n"
+"Language: es_ES\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.7; wp-6.5.3\n"
+"X-Domain: aopokedex"
+
+#: single-pokemon.php:131
+msgid "ABILITIES"
+msgstr "HABILIDADES"
+
+#. Name of the theme
+msgid "Aopokedex"
+msgstr ""
+
+#: single-pokemon.php:156
+msgid "BASE STATS"
+msgstr "ESTADÍSTICAS BASE"
+
+#: functions.php:220
+msgid "Category"
+msgstr "Categoría"
+
+#: functions.php:316
+msgid "Defending Pokémon"
+msgstr "Pokémon Defensor"
+
+#. URI of the theme
+#. Author URI of the theme
+msgid "https://www.aopokedex.site"
+msgstr ""
+
+#. Author of the theme
+msgid "m1chaelD"
+msgstr ""
+
+#: single-pokemon.php:196
+msgid "MOVES"
+msgstr "MOVIMIENTOS"
+
+#: functions.php:217
+msgid "Name"
+msgstr "Nombre"
+
+#: functions.php:118
+msgid "National"
+msgstr ""
+
+#: single-pokemon.php:99
+msgid "NATIONAL POKÉDEX"
+msgstr "POKÉDEX NACIONAL"
+
+#: single-pokemon.php:146
+msgid "POKÉDEX ENTRY"
+msgstr "ENTRADA POKÉDEX"
+
+#: single-pokemon.php:96
+msgid "POKÉMON DATA"
+msgstr "DATOS POKÉMON"
+
+#: functions.php:218
+msgid "Power"
+msgstr "Poder"
+
+#: functions.php:297
+msgid "Select a Move"
+msgstr "Selecciona Movimiento"
+
+#: single-pokemon.php:127
+msgid "SPECIE"
+msgstr "ÉSPECIE"
+
+#. Description of the theme
+msgid "Theme for Aopokedex"
+msgstr "Tema para Aopokedex"
+
+#: functions.php:219
+msgid "Type"
+msgstr "Tipo"
+
+#: single-pokemon.php:116
+msgid "TYPES"
+msgstr "TIPOS"
+
+#: single-pokemon.php:224
+msgid "WEAKNESS BY TYPE FOR"
+msgstr "DEBILIDADES POR TIPO DE"
